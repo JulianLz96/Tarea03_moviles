@@ -90,6 +90,13 @@ public class AdapterProduct extends RecyclerView.Adapter<AdapterProduct.ViewHold
                 context.startActivity(intent);
             }
         });
+        holder.mEventLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(context, products.get(position).toString(),
+                        Toast.LENGTH_LONG).show();
+            }
+        });
     }
 
     @Override
