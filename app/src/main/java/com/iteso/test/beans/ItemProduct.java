@@ -10,6 +10,12 @@ public class ItemProduct {
     private String description;
 
     public ItemProduct(){
+        setImage(0);
+        setTitle("");
+        setStore("");
+        setLocation("");
+        setPhone("");
+        setDescription("");
 
     }
 
@@ -73,12 +79,12 @@ public class ItemProduct {
     @Override
     public String toString() {
         return "ItemProduct{" +
-                "image=" + image +
-                ", title='" + title + '\'' +
+                "title='" + title + '\'' +
                 ", store='" + store + '\'' +
                 ", location='" + location + '\'' +
                 ", phone='" + phone + '\'' +
                 ", description='" + description + '\'' +
+                ", image=" + image  +
                 '}';
     }
 }
